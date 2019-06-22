@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:background="#86000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_alignParentBottom="true"
+                  android:orientation="vertical"
+                  android:background="#ffffff"
+                  android:layout_height="250dp">
+
+        <RelativeLayout android:layout_width="match_parent"
+
+                        android:layout_height="50dp">
+
+            <TextView android:layout_width="50dp"
+                      android:text="取消"
+                      android:gravity="center"
+                      android:id="@+id/mCancel"
+                      android:textSize="13sp"
+                      android:textColor="#222222"
+                      android:layout_height="match_parent"/>
+
+            <TextView android:layout_width="50dp"
+                      android:text="确定"
+                      android:layout_alignParentRight="true"
+                      android:gravity="center"
+                      android:id="@+id/mConfirm"
+                      android:textSize="13sp"
+                      android:textColor="#222222"
+                      android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_height="match_parent">
+
+            <component.com.cityslectorcomponent.view.CustomWheelView
+                    android:id="@+id/mProvinceWheel"
+                    app:itemNumber="5"
+                    app:lineHeight="0.5dp"
+                    android:layout_weight="1"
+
+                    app:lineColor="#00000000"
+                    app:unitHight="25dp"
+                    app:normalTextColor="#666666"
+                    app:selectedTextColor="#222222"
+                    app:selectedTextSize="18sp"
+                    app:normalTextSize="13sp"
+
+
+                    app:splitLineWidth="100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal" />
+            <component.com.cityslectorcomponent.view.CustomWheelView
+                    android:id="@+id/mCityWheel"
+                    app:itemNumber="5"
+                    app:lineHeight="0.5dp"
+                    android:layout_weight="1"
+
+                    app:splitLineWidth="100dp"
+
+                    app:lineColor="#00000000"
+                    app:unitHight="25dp"
+                    app:normalTextColor="#666666"
+                    app:selectedTextColor="#222222"
+                    app:selectedTextSize="18sp"
+                    app:normalTextSize="13sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal" />
+
+            <component.com.cityslectorcomponent.view.CustomWheelView
+                    android:id="@+id/mDistinctWheel"
+                    app:itemNumber="5"
+                    app:lineHeight="0.5dp"
+                    android:layout_weight="1"
+                    app:splitLineWidth="100dp"
+
+
+                    app:lineColor="#00000000"
+                    app:unitHight="25dp"
+                    app:normalTextColor="#666666"
+                    app:selectedTextColor="#222222"
+                    app:selectedTextSize="18sp"
+                    app:normalTextSize="13sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

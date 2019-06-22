@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomDialogTheme" parent="AlertDialog.AppCompat">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowActionBar">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden|adjustPan</item>
+    </style>
+
+
+    <style name="DialogTranslateAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_translate_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_translate_exist</item>
+    </style>
+
+</resources>
